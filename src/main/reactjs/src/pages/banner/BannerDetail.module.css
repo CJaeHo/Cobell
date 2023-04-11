@@ -1,0 +1,65 @@
+.menu_title .title{
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.menu_title .left_icon{
+  color: gray;
+  cursor: pointer;
+}
+
+.menu_title .hidden{
+  visibility: hidden;
+  width: 24px;
+}
+
+.menu_title .submit_btn{
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+  padding: 0;
+}
+.menu_title {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  padding: 12px 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 3;
+}
+
+.menu_title .title {
+  display: flex;
+  justify-align: center;
+}
+
+.detailImgBox {
+  width: 100%;
+}
+
+.detailImgBox img{
+  width: 100%;
+  margin-top: 50px;
+}
+.challBtnBox button{
+  width: 200px;
+  height: 50px;
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: white;
+  justify-align:center;
+  font-weight: bold;
+  background-color: #ef466f;
+  border-radius: 16px;
+  border: none;
+  box-shadow: 3px 5px 10px gray;
+}
+
+.challBtnBox {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+

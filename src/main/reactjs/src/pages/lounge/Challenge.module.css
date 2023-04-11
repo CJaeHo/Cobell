@@ -1,0 +1,417 @@
+.wrap{
+  margin-top: 51px;
+  margin-bottom: 50px;
+}
+
+.challenge_photo{
+  /* 화면 가로 너비의 90% */
+  height: 90vw;
+  max-height: 40vh;
+  /* min-height: 50vw; */
+  /* border: 1px solid black; */
+  background-size: cover;
+  background-position: center;
+  padding: 10px;
+  /* display: flex; */
+  align-content: stretch;
+  flex-direction: column;
+  justify-content: space-between;
+
+  position: relative;
+  /* z-index: -2; */
+}
+
+.challenge_photo::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(20, 20, 20, 0) 60%,
+    rgba(20, 20, 20, 0.4) 100%
+  );
+  /* z-index: -1; */
+  z-index: 1;
+}
+
+.challenge_title{
+  font-size: 24px;
+  font-weight: 700;
+  color: white;
+  text-align: right;
+  /* margin-bottom: 5px;
+  margin-right: 3px; */
+  padding-left: 90px;
+  word-break: keep-all;
+  overflow-wrap: break-word;  /* 띄어쓰기 없는 긴 텍스트 줄바꿈 */
+
+  z-index: 2;
+
+  position: absolute;
+  bottom: 20px;
+  right: 15px;
+}
+
+.subtitle{
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.like_off{
+  cursor: pointer;
+  color: rgba(240, 240, 240, 1);
+  z-index: 2;
+  font-size: 28px;
+  position: absolute;
+}
+
+.like_on{
+  cursor: pointer;
+  color: rgba(255, 0, 0, 0.9);
+  z-index: 2;
+  font-size: 28px;
+  position: absolute;
+}
+
+.profile_wrap{
+  display: flex;
+  align-items: flex-end;
+  margin-top: -35px;
+  margin-left: 20px;
+}
+
+.profile_wrap .photo{
+  width: 70px;
+  height: 70px;
+  margin-right: 12px;
+  border-radius: 100%;
+  object-fit: cover;
+  z-index: 2;
+}
+
+.profile_wrap .no_photo{
+  width: 70px;
+  height: 70px;
+  background-color: rgb(230, 230, 230);
+  border-radius: 100%;
+  margin-right: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.profile_wrap .no_photo_icon{
+  font-size: 45px;
+  color: white;
+  z-index: 2;
+}
+
+.profile_wrap .nickname{
+  font-size: 19px;
+  font-weight: 600;
+}
+
+.info_wrap{
+  padding: 15px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.info_wrap span{
+  color: gray;
+  font-size: 15px;
+  flex-shrink: 0;
+}
+
+pre.content{
+  font-family: inherit;
+  font-size: 16px;
+  margin: 0;
+  padding: 10px 20px;
+  white-space: pre-wrap;
+}
+
+/* 참여한 유저 */
+.joined_user{
+  padding: 20px;
+}
+
+.subtitle_wrap{
+  /* padding: 0 20px; */
+  display: flex;
+  align-items: center;
+}
+
+.count_wrap{
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.count_wrap .icon{
+  font-size: 16px;
+  color: rgb(150, 150, 150);
+  margin-right: 3px;
+}
+
+.count_wrap .count{
+  font-size: 14px;
+  color: gray;
+}
+
+.users_wrap{
+  display: flex;
+  padding: 10px 0 0 0;
+  overflow-x: scroll;
+}
+
+.users_wrap::-webkit-scrollbar{
+  display: none;
+}
+
+.users_wrap .user{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.users_wrap .photo{
+  width: 40px;
+  height: 40px;
+  /* margin-right: 15px; */
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.users_wrap .no_photo{
+  width: 40px;
+  height: 40px;
+  background-color: rgb(230, 230, 230);
+  border-radius: 100%;
+  /* margin-right: 15px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.users_wrap .no_photo_icon{
+  font-size: 25px;
+  color: white;
+}
+
+.users_wrap .nickname{
+  font-size: 13px;
+  margin-top: 3px;
+}
+
+.comment_list{
+  padding: 10px 20px;
+}
+
+.btn_box{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.join_btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 50px;
+  /* border: none; */
+  /* border-radius: 10px; */
+  font-weight: 600;
+  font-size: 18px;
+  /* margin-bottom: 10px; */
+}
+
+.unjoin_btn{
+  background-color: #b3e1d8;
+  color: white;
+  cursor: pointer;
+}
+
+.light_btn{
+  background-color: rgb(240, 240, 240);
+}
+
+.dark_btn{
+  background-color: rgb(130, 130, 130);
+  color: white;
+}
+
+.mint_btn{
+  background-color: #86dbcb;
+  color: white;
+}
+
+.click_btn{
+  background-color: #86dbcb;
+  color: white;
+  cursor: pointer;
+}
+
+/* 댓글 창 */
+.input_wrap{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid lightgray;
+  border-radius: 100px;
+  height: 30px;
+  margin: 10px 0;
+}
+
+.input_comment{
+  border: 0px solid rgb(230, 230, 230);
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 15px;
+  width: -webkit-fill-available;  /* 너비가 다른 요소에 영향 없을 만큼만 최대로 늘어나게 */
+  font-size: 14px;
+  padding: 0px 2px 0 11px;
+}
+
+input:focus{
+  outline:none;
+}
+
+.input_comment::placeholder{
+  font-size: 12px;
+  color: gray;
+  /* padding: 0 0 2px 8px; */
+}
+
+.comment_btn{
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+
+  font-size: 20px;
+  color: #999999;
+  /* font-weight: 500; */
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+/* Comment.js */
+.comment_wrap{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.comment_wrap .delete_btn{
+  color: rgb(200, 200, 200);
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.comment_wrap .comment{
+  display: flex;
+  align-items: center;
+}
+
+.comment_wrap .info_wrap{
+  display: flex;
+}
+
+.comment_wrap .nickname{
+  font-size: 12px;
+  font-weight: 600;
+  margin-right: 5px;
+}
+
+.comment_wrap .date{
+  color: gray;
+  font-size: 11px;
+}
+
+.comment_wrap .comment .photo{
+  width: 35px;
+  height: 35px;
+  margin-right: 10px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.comment_wrap .comment .no_photo{
+  width: 35px;
+  height: 35px;
+  background-color: rgb(230, 230, 230);
+  border-radius: 100%;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.comment_wrap .comment .no_photo_icon{
+  font-size: 21px;
+  color: white;
+}
+
+.comment_wrap .comment .content{
+  font-size: 15px;
+}
+
+/* MenuTitle.js */
+.menu_title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 3;
+}
+
+.menu_title .title{
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.menu_title .left_icon{
+  color: gray;
+  cursor: pointer;
+}
+
+.menu_title .hidden{
+  visibility: hidden;
+  width: 24px;
+}
+
+.menu_title .submit_btn{
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+  padding: 0;
+}
+
+/* ChallengeMenu.js */
+.menu_wrap .delete_btn{
+  font-size: 20px;
+  color: gray;
+}
+
+.menu_wrap > button#long-button.css-78trlr-MuiButtonBase-root-MuiIconButton-root{
+  padding: 0 !important;
+}
+
+.menu_wrap > button#long-button{
+  padding: 0 !important;
+}
+

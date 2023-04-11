@@ -1,0 +1,36 @@
+.carousel .control-dots .dot{
+  box-shadow: 0px 0px 2px rgb(0 0 0 / 90%) !important;
+  width: 6px !important;
+  height: 6px !important;
+  margin: 0 5px !important;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s;
+  -webkit-transition: background-color 9999s ease-out;
+  box-shadow: 0 0 0px 1000px white inset !important;
+  -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+}
+
+input:focus, textarea, select:focus, option:focus, button:focus{
+  outline:none;
+}
+
+.DashCard-undefined{
+  background-color: transparent !important;
+}
+
+.DashCard-undefined{
+  margin-top: 0 !important;
+}
+
+.chart-skills-undefined{
+  margin-top: 0 !important;
+}
+
+.form-check-input:checked {
+  background-color: #18bf9f;
+}

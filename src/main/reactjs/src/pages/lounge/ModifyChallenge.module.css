@@ -1,0 +1,200 @@
+input:focus, textarea, select:focus, option:focus, button:focus{
+  outline:none;
+}
+
+.hidden{
+  display: none;
+}
+
+.wrap{
+  margin-bottom: 20px;
+  margin-top: 57px;
+}
+
+.main{
+  padding: 0 20px;
+}
+
+/* 사진 */
+.no_image{
+  width: 100vw;
+  height: 70vw;
+  max-height: 40vh;
+  background-color: rgb(245, 245, 245);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.no_image .add_icon{
+  color: rgb(210, 210, 210);
+  font-size: 60px;
+}
+
+.preview{
+  width: 100vw;
+  max-height: 100vw;
+  /* height: -webkit-fill-available; */
+  object-fit: cover;
+  object-position: center center;
+}
+
+.main>div{
+  margin-top: 23px;
+}
+
+.main .subtitle{
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.main div:nth-child(-n+3) .subtitle{
+  /* margin-bottom: 3px; */
+}
+
+.title_wrap input{
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  background-color: rgb(245, 245, 245);
+  padding: 10px;
+}
+
+.content_wrap textarea{
+  width: 100%;
+  /* height: 93px; */
+  border: none;
+  border-radius: 8px;
+  background-color: rgb(245, 245, 245);
+  resize: none;
+  padding: 10px;
+}
+
+.main>div.flex_box{ /* 3번째 ~ */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 30px;
+}
+
+.limit_wrap{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.limit_wrap .btn_wrap{
+  display: flex;
+  align-items: center;
+}
+
+.limit_wrap .limit_btn{
+  color: rgb(100, 100, 100);
+  /* margin: 0 15px; */
+  cursor: pointer;
+}
+
+.limit_wrap .limit_btn_disable{
+  color: rgb(220, 220, 220);
+  /* margin: 0 15px; */
+  /* cursor: pointer; */
+}
+
+.limit_wrap .count{
+  width: 80px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Datetime */
+.date_picker{
+  border: none;
+  background-color: rgb(245, 245, 245);
+  border-radius: 8px;
+  padding: 5px 10px;
+  /* width: 220px; */
+  color: #212529;
+
+  height: 30px;
+}
+
+/* Area, Gender radio button group */
+.btn_wrap label{
+  margin-left: 15px;
+}
+
+.btn_wrap label span{
+  margin-left: 5px;
+}
+
+/* Area */
+.area_input{
+  width: 165px;
+  border: none;
+  border-radius: 8px;
+  background-color: rgb(245, 245, 245);
+  padding: 5px 10px;
+}
+
+/* Age */
+.age_wrap select.age_select{
+  width: fit-content !important;
+  height: 30px;
+  background-position: right 0.5rem center !important;
+  background-color: rgb(245, 245, 245);
+  font-size: 15px;
+  color: #212529;
+  border: none;
+  border-radius: 8px;
+  padding: 0.25rem 2rem 0.25rem 0.75rem;
+  /* -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; */
+}
+
+.age_wrap select.age_select:focus{
+  outline: none;
+}
+
+/* MenuTitle.js */
+.menu_title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+}
+
+.menu_title .title{
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.menu_title .left_icon{
+  color: gray;
+  cursor: pointer;
+}
+
+.menu_title .hidden{
+  visibility: hidden;
+  width: 24px;
+}
+
+.menu_title .submit_btn{
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+  padding: 0;
+  font-weight: 600;
+  color: #4bc9b2;
+}
+
+.menu_title .disabled_submit_btn{
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+  padding: 0;
+  color: rgb(225, 225, 225);
+  font-weight: 600;
+}
