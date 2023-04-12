@@ -94,7 +94,7 @@ const ChallengeList = () => {
 
           {/* 인기 챌린지 */}
           <div className={styles.subtitle_box}>
-            <span className={styles.subtitle}>인기 챌린지 (준비 중 입니다.)</span>
+            <span className={styles.subtitle}>인기 챌린지</span>
           </div>
         </div>
       }

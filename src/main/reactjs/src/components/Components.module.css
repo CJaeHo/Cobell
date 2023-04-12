@@ -4,7 +4,7 @@
   position: fixed;
   bottom: 0;
   width: 100%;
-  height: 50px;
+  height: 45px;
   background-color: #a2ebdd;
 }
 
@@ -13,7 +13,7 @@
 }
 
 .barIcons {
-  font-size: 27px;
+  font-size: 25px;
 }
 
 .menu div{
@@ -25,7 +25,7 @@
   cursor: pointer;
   font-size: 12px;
   font-weight: bold;
-  text-shadow: 1px 1px 3px gray;
+  /*text-shadow: 1px 1px 3px gray;*/
   line-height: 15px;
   color: white;
   border-right: 1px solid white;
@@ -70,7 +70,8 @@
 .challenge{
   width: 100%;
   height: 110px;
-  /* border: 1px solid lightgray; */
+   /*border: 1px solid lightgray;*/
+  border-radius: 12px;
   background-color: rgb(248, 248, 248);
   /* margin: 10px 0; */
   /* border-radius: 10px; */
@@ -84,17 +85,30 @@
 }
 
 .challenge .photo{
-  width: 110px;
-  min-width: 110px;
+  width: 100px;
+  max-width: 100px;
   background-size: cover;
   background-position: center;
+  /*border: 1px solid lightgray;*/
+    border-radius: 12px;
 }
 
 .challenge .info_wrap{
-  padding: 5px 15px;
+  padding: 5px 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+}
+
+.challenge .tag {
+  background-color: #e8e8e8;
+  color: #9c9c9c;
+  font-weight: bold;
+  width: 55px;
+  font-size: 12px;
+  padding: 3px;
+  text-align: center;
+  border-radius: 16px;
 }
 
 .challenge .title{

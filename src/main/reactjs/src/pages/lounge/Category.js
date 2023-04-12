@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './ChallengeList.module.css';
 
-const categoryList = ['전체', '러닝', '등산','산책', '헬스', '수영', '테니스', '배드민턴', '자전거', '요가', '클라이밍', '볼링', '플로깅', '골프', '서핑', '농구', '축구', '보드'];
+const categoryList = ['전체', '러닝', '등산','산책', '헬스', '수영', '테니스', '배드민턴', '자전거', '요가', '클라이밍', '볼링', '플로깅', '골프', '서핑', '농구', '축구', '보드', '스피닝'];
 
 const Category = ({categoryCode, setCategoryCode}) => {
 

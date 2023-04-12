@@ -5,6 +5,8 @@ import styles from './Components.module.css';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
+const hobbyList = ['러닝', '등산', '산책', '헬스', '수영', '테니스', '배드민턴', '자전거', '요가', '클라이밍', '볼링', '플로깅', '골프', '서핑', '농구', '축구', '보드', '스피닝'];
+
 const ChallengeItem = ({challenge, likeList, getLikeList}) => {
   const navigate = useNavigate();
   const [user, setUser] = useState(JSON.parse(localStorage.getItem("user")));
@@ -61,6 +63,7 @@ const ChallengeItem = ({challenge, likeList, getLikeList}) => {
       }
       
       <div className={styles.info_wrap} onClick={() => navigate(`/lounge/${challenge.id}`)}>
+        <div className={styles.tag}>{hobbyList[challenge.category]}</div>
         <div className={styles.title}>{challenge.title}</div>
         <div className={styles.info}>
           <span className={`material-icons ${styles.icon} ${styles.place_icon}`}>place</span>

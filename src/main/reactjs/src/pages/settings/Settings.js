@@ -1,10 +1,16 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Navigate, useNavigate } from 'react-router-dom';
 import styles from './Settings.module.css';
 
 const Settings = () => {
   const navigate = useNavigate();
   const [user, setUser] = useState(JSON.parse(localStorage.getItem("user")));
+
+  const [active, setActive] = useState('');
+
+  useEffect(() => {
+    localStorage.setItem("active", JSON.stringify(active));
+  }, [active])
 
   return (
     <div>
@@ -17,6 +23,7 @@ const Settings = () => {
             <div className={styles.btn_item} onClick={() => {
               localStorage.removeItem("user");
               setUser(null);
+              setActive(0);
             }}>로그아웃</div>
 
             {/* <div className={styles.btn_item} onClick={() => {}}>공지사항</div>

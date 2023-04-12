@@ -5,6 +5,7 @@ import styles from './Components.module.css';
 const MenuBar = () => {
   const navigate = useNavigate();
   const [activeIndex, setActiveIndex] = useState(-1);
+  const activeDefault = JSON.parse(localStorage.getItem('active'));
 
   const handleMenuClick = (index) => {
     setActiveIndex(index);
@@ -32,7 +33,7 @@ const MenuBar = () => {
       window.location.pathname === '/settings') {
     return (
       <div className={styles.menu}>
-        <div className={activeIndex === 0 ? styles.active : ''} onClick={() => handleMenuClick(0)}><span className={`material-icons ${styles.barIcons}`}>home</span>라운지</div>
+        <div className={(activeIndex === 0 || activeIndex === -1) ? styles.active : ''} onClick={() => handleMenuClick(0)}><span className={`material-icons ${styles.barIcons}`}>home</span>라운지</div>
         <div className={activeIndex === 1 ? styles.active : ''} onClick={() => handleMenuClick(1)}><span className={`material-icons ${styles.barIcons}`}>article</span>리포트</div>
         <div className={activeIndex === 2 ? styles.active : ''} onClick={() => handleMenuClick(2)}><span className={`material-icons ${styles.barIcons}`}>person</span>프로필</div>
         <div className={activeIndex === 3 ? styles.active : ''} onClick={() => handleMenuClick(3)}><span className={`material-icons ${styles.barIcons}`}>settings</span>설정</div>

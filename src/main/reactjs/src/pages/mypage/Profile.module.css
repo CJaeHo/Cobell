@@ -72,31 +72,32 @@
 /* 매너 점수(bell) */
 .bellImgBox {
   display: flex;
-  width: 150px;
-  height: 35px;
+  width: 80px;
+  height: 26px;
   align-items: center;
   justify-content: center;
   float: right;
   border-radius: 20px;
   background-color: #f7eec6;
+  margin-right: 3px;
 }
 
 .bellScore {
-  width: 80px;
-  font-size: 22px;
+  width: 42px;
+  font-size: 13px;
   font-weight: bold;
   color: #e0cb7f;
 }
 
 .bellImg {
-  height: 25px;
+  height: 15px;
 }
 
 .bellArrow {
-  width: 25px;
-  font-size: 25px;
+  width: 5px;
+  font-size: 10px;
   font-weight: 600px;
-  margin-bottom: 6px;
+  margin-bottom: 2px;
   margin-left: 3px;
   color: white;
   cursor: pointer;

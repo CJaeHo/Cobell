@@ -38,7 +38,7 @@ import bell from '../../img/bell.png';
 //   }
 // });
 
-const hobbyList = ['러닝', '등산', '산책', '헬스', '수영', '테니스', '배드민턴', '자전거', '요가', '클라이밍', '볼링', '플로깅', '골프', '서핑', '농구', '축구', '보드'];
+const hobbyList = ['러닝', '등산', '산책', '헬스', '수영', '테니스', '배드민턴', '자전거', '요가', '클라이밍', '볼링', '플로깅', '골프', '서핑', '농구', '축구', '보드', '스피닝'];
 
 const Profile = () => {
   const navigate = useNavigate();
@@ -122,7 +122,7 @@ const Profile = () => {
           {/* 매너 점수(bell 점수) */}
           <div className={styles.bellImgBox}>
             <img className={styles.bellImg} src={bell}/>
-            <div className={styles.bellScore}>50 bell</div>
+            <div className={styles.bellScore}>50 Bell</div>
             <span className={styles.bellArrow} onClick={handleOnClick}>></span>
           </div>
 
