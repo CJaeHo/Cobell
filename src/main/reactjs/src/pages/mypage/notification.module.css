@@ -5,9 +5,7 @@
 }
 
 .noti_box{
-  height: 60px;
-  margin-bottom: 15px;
-  padding: 10px 5px;
+  padding: 13px 5px;
 }
 
 .noti_box:not(:last-child){
