@@ -106,30 +106,34 @@
   border: 1px solid #cccccc;
   cursor: pointer;
   width: auto;
-  padding: 5px 10px 5px 10px;
+  padding: 3px 8px 3px 8px;
+  color: #707070;
+  font-size: 14px;
 }
 .recommend2 {
-  margin: 5px 10px;
-  padding: 8px;
+  margin: 5px 5px;
+  padding: 6px;
   border-radius: 20px;
   background-color: #ededed;
   cursor: pointer;
   width: auto;
   font-size: 14px;
-  height: 35px;
+  height: 30px;
   justify-content: center;
-  line-height: 34px;
+  line-height: 30px;
   display: flex;
   align-items: center;
 }
 
 .recentWords {
-  font-size: 16px;
+  font-size: 12px;
+  color: #707070;
 }
 
 .remove_button {
-  margin-left: 10px;
+  margin-left: 4px;
   color: #bcbcbc;
+  font-size: 20px;
 }
 
 /*.RemoveBox {

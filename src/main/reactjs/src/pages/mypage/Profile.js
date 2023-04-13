@@ -88,7 +88,6 @@ const Profile = () => {
     alert("매너 점수 페이지 제작 중 입니다.");
   }
 
-
   return (
     <div>
       { !user && <Navigate to="/login" replace={true} /> }
@@ -107,7 +106,12 @@ const Profile = () => {
               <div className={styles.nickname_wrap}>
                 <span className={styles.nickname}>{userInfo.nickname}</span>
                 {/* <span className={`material-icons ${styles.edit_btn}`} onClick={() => navigate('/profile/edit')}>edit</span> */}
-                <span className={`material-icons ${styles.edit_btn}`} onClick={() => navigate('/profile/edit')}>settings</span>
+                {/*<span className={`material-icons ${styles.edit_btn}`} onClick={() => navigate('/profile/edit')}>settings</span>*/}
+                {/* 매너 점수(bell 점수) */}
+                <div className={styles.bellImgBox} onClick={handleOnClick}>
+                  <img className={styles.bellImg} src={bell}/>
+                  <div className={styles.bellScore}>50 Bell</div>
+                </div>
               </div>
               {
                 userInfo.bio &&
@@ -119,12 +123,6 @@ const Profile = () => {
 
           </div>
 
-          {/* 매너 점수(bell 점수) */}
-          <div className={styles.bellImgBox}>
-            <img className={styles.bellImg} src={bell}/>
-            <div className={styles.bellScore}>50 Bell</div>
-            <span className={styles.bellArrow} onClick={handleOnClick}>></span>
-          </div>
 
           {/* 관심사 */}
           <div className={styles.hobby_btn_wrap}>
@@ -138,6 +136,7 @@ const Profile = () => {
           <div className={styles.btn_wrap}>
             <span className={`material-icons-outlined ${styles.add_btn}`} onClick={() => navigate('/feed/new')}>add_box</span>
             <span className={`material-icons-outlined ${styles.noti_btn}`} onClick={() => navigate('/notification')}>notifications</span>
+            <span className={`material-icons ${styles.edit_btn}`} onClick={() => navigate('/profile/edit')}>settings</span>
           </div>
           
           {/* <MuiThemeProvider theme={theme}> */}

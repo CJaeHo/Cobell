@@ -5,22 +5,22 @@
 
 .profile_box{
   display: flex;
-  padding: 30px 20px 10px 20px;
+  padding: 80px 20px 0px 20px;
 }
 
 .photo{
-  width: 80px;
-  min-width: 80px;
-  height: 80px;
+  width: 100px;
+  min-width: 100px;
+  height: 100px;
   margin-right: 15px;
   border-radius: 100%;
   object-fit: cover;
 }
 
 .no_photo{
-  width: 80px;
-  min-width: 80px;
-  height: 80px;
+  width: 100px;
+  min-width: 100px;
+  height: 100px;
   background-color: rgb(230, 230, 230);
   border-radius: 100%;
   margin-right: 15px;
@@ -30,7 +30,7 @@
 }
 
 .no_photo_icon{
-  font-size: 45px;
+  font-size: 65px;
   color: white;
 }
 
@@ -49,13 +49,6 @@
   font-weight: 600;
 }
 
-.edit_btn{
-  font-size: 18px;
-  color: lightgray;
-  margin-left: 7px;
-  cursor: pointer;
-}
-
 .subtitle{
   font-size: 17px;
   font-weight: 600;
@@ -67,24 +60,28 @@
   /* margin-top: 3px; */
   margin: 3px 0 0 0;
   white-space: pre-wrap;
+  width: 220px;
+  overflow-wrap: anywhere;
 }
 
 /* 매너 점수(bell) */
 .bellImgBox {
   display: flex;
-  width: 80px;
-  height: 26px;
+  width: 60px;
+  height: 23px;
   align-items: center;
   justify-content: center;
   float: right;
   border-radius: 20px;
   background-color: #f7eec6;
-  margin-right: 3px;
+  margin-right: 20px;
+  margin-left: 10px;
+  padding-left: 3px;
 }
 
 .bellScore {
-  width: 42px;
-  font-size: 13px;
+  width: 40px;
+  font-size: 10px;
   font-weight: bold;
   color: #e0cb7f;
 }
@@ -93,7 +90,7 @@
   height: 15px;
 }
 
-.bellArrow {
+/*.bellArrow {
   width: 5px;
   font-size: 10px;
   font-weight: 600px;
@@ -101,7 +98,7 @@
   margin-left: 3px;
   color: white;
   cursor: pointer;
-}
+}*/
 
 /* 관심사 */
 .hobby_box{
@@ -127,9 +124,10 @@
   background-color: rgb(243, 243, 243);
   padding: 4px 10px;
   border-radius: 16px;
-  font-size: 15px;
+  font-size: 12px;
   margin-right: 7px;
   margin-bottom: 8px;
+  color: #828282;
 }
 
 .selected{
@@ -154,6 +152,13 @@
 }
 
 .noti_btn{
+  margin-left: 13px;
+  cursor: pointer;
+}
+
+.edit_btn{
+  font-size: 22px;
+  /*color: #464646;*/
   margin-left: 13px;
   cursor: pointer;
 }

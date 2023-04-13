@@ -34,9 +34,11 @@ const Search = () => {
   }
 
   const handleEnter = (e) => {
-    if(e.key === 'Enter')
+  console.log(e);
+    if(e.keyCode === 13) {
       setNewKeyword(keyword);
       handleSearch();
+    }
   }
 
   useEffect(() => {
@@ -56,7 +58,7 @@ const Search = () => {
         setSearchList(res.data.filter(challenge => challenge.title.includes(searchParams.get("keyword"))));
       }
     }).catch(err => console.log(err));
-    
+
     getLikeList();
   }, []);
 
@@ -83,6 +85,7 @@ const Search = () => {
      newRecentSearchList.splice(index, 1);
      setRecentSearchList(newRecentSearchList);
      localStorage.setItem("recentSearchList", JSON.stringify(newRecentSearchList));
+     ;
    };
 
   const recentListSearch = () => {
@@ -100,7 +103,7 @@ const Search = () => {
       {/* 검색창 */}
       <div className={styles.search_bar}>
         <span className={`material-icons ${styles.left_icon}`} onClick={() => navigate('/lounge')}>arrow_back_ios</span>
-        <input type='text' autoFocus onChange={(e) => setKeyword(e.target.value)} onKeyUp={handleEnter} defaultValue={keyword}/>
+        <input type='text' autoFocus placeholder="검색어를 입력해주세요" onChange={(e) => setKeyword(e.target.value)} onKeyUp={handleEnter} defaultValue={keyword}/>
         <span className={`material-icons ${styles.search_btn}`} onClick={handleSearch}>search</span>
       </div>
 
@@ -126,7 +129,7 @@ const Search = () => {
       <div className={styles.recommendBoxList}>
         {
           recommendList.map((item, index) => (
-            <div className={styles.recommend}>{item}</div>
+            <div className={styles.recommend} onClick={recentListSearch}>{item}</div>
           ))
         }
       </div>

@@ -4,7 +4,7 @@
   position: fixed;
   bottom: 0;
   width: 100%;
-  height: 45px;
+  height: 40px;
   background-color: #a2ebdd;
 }
 
@@ -13,7 +13,7 @@
 }
 
 .barIcons {
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .menu div{
@@ -23,10 +23,10 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  font-size: 12px;
+  font-size: 8px;
   font-weight: bold;
   /*text-shadow: 1px 1px 3px gray;*/
-  line-height: 15px;
+  line-height: 11px;
   color: white;
   border-right: 1px solid white;
   transition: 0.4s;
@@ -68,7 +68,7 @@
 
 /* ChallengeItem.js, LikeItem.js */
 .challenge{
-  width: 100%;
+  /*width: 100%;*/
   height: 110px;
    /*border: 1px solid lightgray;*/
   border-radius: 12px;
@@ -77,6 +77,8 @@
   /* border-radius: 10px; */
   display: flex;
   overflow: hidden;
+  margin-left: 3px;
+  margin-right: 3px;
 }
 
 .challenge:not(:last-child){

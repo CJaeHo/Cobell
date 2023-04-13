@@ -62,7 +62,7 @@
   display: flex;
   overflow-x: scroll;
   /* overflow-y: visible; */
-  height: 83px;
+  height: 100px;
   align-items: center;
 }
 
@@ -72,8 +72,8 @@
 
 .new_feed .add_photo_box{
   background-color: rgb(245, 245, 245);
-  width: 70px;
-  height: 70px;
+  width: 100px;
+  height: 100px;
   border-radius: 8px;
   cursor: pointer;
 
@@ -84,7 +84,7 @@
 
 .new_feed .photo_btn{
   color: rgb(210, 210, 210);
-  font-size: 25px;
+  font-size: 40px;
 }
 
 .new_feed .hidden{
@@ -195,7 +195,8 @@
   align-items: center;
   justify-content: space-between;
   padding: 0 15px;
-  width: 150px;
+  width: 120px;
+  font-size: 16px;
 }
 
 .new_feed .narrow_input{
@@ -204,6 +205,9 @@
   border: none;
   width: 100%;
   padding: 10px;
+  background-color: rgb(245, 245, 245);
+  border-radius: 8px;
+  margin-right: 3px;
 }
 
 /* FeedDetail.js */
